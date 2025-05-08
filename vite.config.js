@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server: {
     proxy: {
-      '/upload': 'https://f365-202-47-34-45.ngrok-free.app', // Your FastAPI port
-      '/query': 'https://f365-202-47-34-45.ngrok-free.app'
+      '/upload': 'https://rag-chat-bot-1-c2bq.onrender.com', // Your FastAPI port
+      '/query': 'https://rag-chat-bot-1-c2bq.onrender.com'
     }
   },
   plugins: [react()],
