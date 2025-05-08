@@ -24,7 +24,7 @@ const ChatPage = () => {
       const formData = new FormData();
       formData.append('query', input);
       
-      const response = await axios.post('/query', formData, {
+      const response = await axios.post('https://f365-202-47-34-45.ngrok-free.app/query', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -89,7 +89,7 @@ const ChatPage = () => {
       const formData = new FormData();
       validFiles.forEach(file => formData.append('files', file));
 
-      const response = await axios.post('https://rag-chat-bot-1-c2bq.onrender.com/upload', formData, {
+      const response = await axios.post('https://f365-202-47-34-45.ngrok-free.app/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
