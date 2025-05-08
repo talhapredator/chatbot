@@ -89,7 +89,7 @@ const ChatPage = () => {
       const formData = new FormData();
       validFiles.forEach(file => formData.append('files', file));
 
-      const response = await axios.post('/upload', formData, {
+      const response = await axios.post('https://rag-chat-bot-1-c2bq.onrender.com/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
