@@ -24,7 +24,7 @@ const ChatPage = () => {
       const formData = new FormData();
       formData.append('query', input);
       
-      const response = await axios.post('https://backend-rouge-seven-82.vercel.app/query', formData, {
+      const response = await axios.post('https://3689-117-102-49-58.ngrok-free.app/query', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -89,7 +89,7 @@ const ChatPage = () => {
       const formData = new FormData();
       validFiles.forEach(file => formData.append('files', file));
 
-      const response = await axios.post('https://backend-rouge-seven-82.vercel.app/upload', formData, {
+      const response = await axios.post('https://3689-117-102-49-58.ngrok-free.app/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
